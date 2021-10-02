@@ -1,0 +1,15 @@
+black
+fastapi
+isort
+mypy
+passlib[bcrypt]
+pydocstyle
+pyjwt
+pylint
+pytest
+pytest-cov
+pytest-xdist
+python-multipart
+redis
+requests
+uvicorn

@@ -1,0 +1,11 @@
+Metadata-Version: 1.2
+Name: api-datamigration
+Version: 0.0.0a0
+Summary: This is a basic Angular FastAPI implementation!
+Home-page: UNKNOWN
+Author: Nate Carpenter
+Author-email: necarpenter@gmail.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.6.6
