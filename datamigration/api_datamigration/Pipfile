@@ -1,0 +1,12 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+simple-salesforce = {editable = true, git = "https://github.com/simple-salesforce/simple-salesforce.git"}
+
+[dev-packages]
+
+[requires]
+python_version = "3.8"

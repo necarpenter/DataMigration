@@ -18,7 +18,7 @@ setup(
     author_email="necarpenter@gmail.com",
     url="",
     include_package_data=True,
-    description="This is a basic Angular FastAPI implementation!",
+    description="Basic App for Migrating Data into Salesforce",
     packages=find_packages('src'),
     package_dir={
         '': 'src',
