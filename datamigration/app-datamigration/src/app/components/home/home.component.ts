@@ -11,7 +11,7 @@ export class HomeComponent {
   constructor(private state: GlobalStateService) { }
 
   get loggedIn () {
-    return this.state.loginStatus;
+    return true;
   }
 
 }
