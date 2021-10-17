@@ -1,4 +1,0 @@
-[console_scripts]
-example_command = api_datamigration.tools.example:main
-start_api_server = api_datamigration.app:main
-
