@@ -12,11 +12,14 @@ export class FileUploadComponent implements OnInit {
     
 	  let file: File = event.target.files[0] as File;
     
-    this.fileupload.postFile(file).subscribe(data => {
+    this.fileupload.postFile(file).subscribe(
+      data => {
         console.log(data);
-      }, error => {
+      }, 
+      error => {
         console.log(error);
-      });
+      })
+      ;
       
   }
 

@@ -1,3 +1,5 @@
 export interface Uploadresult {
-    file_size: Number;
+    success: Boolean;
+    recordIds: Array<String>;
+    errors: Array<String>;
 }

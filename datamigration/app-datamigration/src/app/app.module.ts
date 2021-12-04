@@ -6,12 +6,16 @@ import { AppComponent } from './app.component';
 import { FileUploadComponent } from './file-upload/file-upload.component';
 import { HttpClientModule } from '@angular/common/http';
 import { HomeComponent } from './home/home.component';
+import { SfLoginComponent } from './sf-login/sf-login.component';
+import { SfLoginCallbackComponent } from './sf-login-callback/sf-login-callback.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     FileUploadComponent,
-    HomeComponent
+    HomeComponent,
+    SfLoginComponent,
+    SfLoginCallbackComponent
   ],
   imports: [
     BrowserModule,

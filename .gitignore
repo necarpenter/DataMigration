@@ -1,0 +1,4 @@
+
+*.pyc
+datamigration/api_datamigration/__pycache__/BulkUtil.cpython-38.pyc
+datamigration/api_datamigration/__pycache__/main.cpython-38.pyc

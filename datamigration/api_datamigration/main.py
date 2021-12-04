@@ -1,9 +1,12 @@
-from fastapi import FastAPI, File, UploadFile
+from fastapi import FastAPI, File, UploadFile, Form, Header
+from typing import Optional
 
 import csv
 import json
 import BulkUtil
 from fastapi.middleware.cors import CORSMiddleware
+from pydantic import BaseModel
+
 
 app = FastAPI()
 origins = [
@@ -22,7 +25,8 @@ app.add_middleware(
 
 
 @app.post("/files/")
-async def create_file(file: bytes = File(...)):
+async def create_file(file: bytes = File(...), auth_code: Optional[str] = Header(None, convert_underscores=False)):
+    print(auth_code)
     filestr = file.decode() 
     text_file = open("temp.csv", "w")
     n = text_file.write(filestr)
@@ -35,8 +39,9 @@ async def create_file(file: bytes = File(...)):
         for row in reader:
             data.append(row)
     
-    print(data)
-    BulkUtil.insertRecords(data, 'Account')
+    res = BulkUtil.insertRecords(data, 'Account', auth_code)
+    print(res)
+    return res
 
 
 @app.post("/uploadfile/")
